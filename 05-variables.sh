@@ -2,5 +2,9 @@
 
 echo "Please Enter your user name:: "
 
-read USER
+read -s USERNAME
+
+echo "Please enter your password:: "
+
+read -s PASSWORD 
 
