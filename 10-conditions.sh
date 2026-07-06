@@ -9,7 +9,7 @@ R="\e[31m"
 
 
 
-if [ $NUMBER%2 -eq 0 ]
+if [ $($NUMBER%2) -eq 0 ]
 then
     echo -e "Given number $NUMBER is $G EVEN $N"
 else
