@@ -26,7 +26,7 @@ then
         echo "Installing mysql ... Success"
     fi 
 else
-    echo "Mysql is Already ... Installed"
+    echo -e "Mysql is Already ... $Y Installed $N"
 fi 
 
 
@@ -41,5 +41,5 @@ then
         echo "Installing Git ... Success"
     fi 
 else
-    echo "Git is Already ... Installed"
+    echo -e "Git is Already ... $Y Installed $N"
 fi 
