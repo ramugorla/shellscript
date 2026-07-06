@@ -16,3 +16,15 @@ else
     echo -e "Given number $NUMBER is $R ODD $N"
 fi 
 
+
+
+echo "Please provide a number:: "
+
+read num 
+
+if [ $(( num%2 )) -eq 0 ]
+then 
+    echo -e "Given number $NUMBER is $G EVEN $N"
+else
+    echo -e "Given number $NUMBER is $R ODD $N"
+fi 
