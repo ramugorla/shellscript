@@ -15,7 +15,7 @@ then
 fi
 
 
-dnf install mysql -y 
+dnf install mysqll -y 
 if [ $? -ne 0 ]
 then
     echo -e "Installing Mysql ... $R Failure $N"
