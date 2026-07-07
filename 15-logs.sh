@@ -46,7 +46,7 @@ then
     dnf install git -y &>>$LOGS_FILE_NAME
     VALIDATE $? "Installing git"
 else
-    echo "git is already ... Installed"
+    echo -e "git is already ... $Y Installed"
 fi 
 
 
