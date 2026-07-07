@@ -6,12 +6,7 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
-
-if [ $? -ne 0 ]
-then
-    echo "You must have root access to execute this script"
-    exit 1
-fi 
+ 
 
 
 LOGS_FOLDER="var/log/expense-logs"
@@ -30,6 +25,11 @@ VALIDATE(){
     fi 
 }
 
+if [ $? -ne 0 ]
+then
+    echo "You must have root access to execute this script"
+    exit 1
+fi
 
 dnf list installed mysql  &>>$LOGS_FILE_NAME
 if [ $? -ne 0 ]
