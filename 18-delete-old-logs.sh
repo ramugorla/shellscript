@@ -23,7 +23,7 @@ while read -r files
 do 
     echo "Files to be deleted:: $files"
 
-done <<< FILES
+done <<< $FILES
 
 
 
