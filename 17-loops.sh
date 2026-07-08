@@ -30,16 +30,17 @@ then
     echo "you must have root access to execute this script"
 fi 
 
-dnf list installed $package &>>$LOGS_FILE_NAME
-if [ $? -ne 0 ]
-then
-    for package in $@ 
-    do
+for package in $@ 
+do
+    dnf list installed $package &>>$LOGS_FILE_NAME
+    if [ $? -ne 0 ]
+    then
         dnf install $package -y &>>$LOGS_FILE_NAME
         VALIDATE $? "Installing $package"
-    done
-else
-    echo "$package already ... installed"
-fi 
+    else
+        echo "$package already ... installed"
+    fi 
+done
+
 
 
