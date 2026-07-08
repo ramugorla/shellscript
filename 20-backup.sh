@@ -20,12 +20,12 @@ then
     USAGE
 fi 
 
-if [ -d $SOURCE_DIR -ne 0 ]
+if [ ! -d $SOURCE_DIR ]
 then 
     echo "$SOURCE_DIR does not exist ... please check"
 fi 
 
-if [ -d $DEST_DIR -ne 0 ]
+if [ ! -d $DEST_DIR ]
 then 
     echo "$DEST_DIR does not exist ... please check"
 fi 
