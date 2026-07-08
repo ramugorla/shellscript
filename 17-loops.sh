@@ -10,8 +10,8 @@ N="\e[0m"
 
 LOGS_FOLDER="/var/log/shell-logs"
 LOG_FILE=$(echo $0 | cut -d "." -f1)
-LOGS_FILE_NAME="$LOGS_FOLDER/$LOG_FILE-$TIMESTAMP.log"
 TIMESTAMP=$(date +%Y-%d-%m-%H-%M-%S)
+LOGS_FILE_NAME="$LOGS_FOLDER/$LOG_FILE-$TIMESTAMP.log"
 
 
 mkdir -p $LOGS_FOLDER
