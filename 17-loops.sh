@@ -25,13 +25,19 @@ VALIDATE(){
     fi 
 }
 
+if [ $USERID -ne 0 ]
+then
+    echo "you must have root access to execute this script"
+fi 
 
 dnf list installed $package &>>$LOGS_FILE_NAME
 if [ $? -ne 0 ]
 then
     for package in $@ 
-    dnf install $package -y &>>$LOGS_FILE_NAME
-    VALIDATE $? "Installing $package"
+    do
+        dnf install $package -y &>>$LOGS_FILE_NAME
+        VALIDATE $? "Installing $package"
+    done
 else
     echo "$package already ... installed"
 fi 
