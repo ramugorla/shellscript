@@ -18,3 +18,5 @@ mkdir -p $SOURCE_DIR
 FILES=$(find $SOURCE_DIR -name "*.log" -mtime +14)
 
 echo "Files to be deleted:: $FILES"
+
+
