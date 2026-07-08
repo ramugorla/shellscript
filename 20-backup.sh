@@ -22,10 +22,10 @@ fi
 
 if [ -d $SOURCE_DIR -ne 0 ]
 then 
-    echo "$SOURCE_DIR doesn't exist ... please check"
+    echo "$SOURCE_DIR does not exist ... please check"
 fi 
 
 if [ -d $DEST_DIR -ne 0 ]
 then 
-    echo "$DEST_DIR doesn't exist ... please check"
+    echo "$DEST_DIR does not exist ... please check"
 fi 
