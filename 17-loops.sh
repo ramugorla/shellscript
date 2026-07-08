@@ -21,7 +21,7 @@ VALIDATE(){
     then
         echo -e "$2 ... $R Failure $N"
     else
-        echo -e "$2 ... $R Success $N"
+        echo -e "$2 ... $G Success $N"
     fi 
 }
 
