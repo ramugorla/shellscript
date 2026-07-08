@@ -10,3 +10,4 @@ TIMESTAMP=$(date +%Y-%m-%d-%H-%M-%S)
 LOG_FILE_NAME="$LOGS_FOLDER/$LOG_FILE-$TIMESTAMP.log"
 
 
+echo "$LOG_FILE_NAME"
