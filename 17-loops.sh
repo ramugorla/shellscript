@@ -19,9 +19,9 @@ mkdir -p $LOGS_FOLDER
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-        echo "$2 ... Failure"
+        echo -e "$2 ... $R Failure $N"
     else
-        echo "$2 ... Success"
+        echo -e "$2 ... $R Success $N"
     fi 
 }
 
@@ -38,7 +38,7 @@ do
         dnf install $package -y &>>$LOGS_FILE_NAME
         VALIDATE $? "Installing $package"
     else
-        echo "$package already ... installed"
+        echo -e "$package already ... $Y installed $N"
     fi 
 done
 
