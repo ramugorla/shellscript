@@ -23,11 +23,13 @@ fi
 if [ ! -d $SOURCE_DIR ]
 then 
     echo "$SOURCE_DIR does not exist ... please check"
+    exit 1
 fi 
 
 if [ ! -d $DEST_DIR ]
 then 
     echo "$DEST_DIR does not exist ... please check"
+    exit 1
 fi 
 
 
